@@ -18,4 +18,6 @@ secret_word: The secret word that the player needs to guess.
 This function prints the hangman's current state, the missed letters, and the correct guesses so far. It also prints the secret word with underscores representing unguessed letters and the guessed letters revealed.
 
 guess(already_guessed): This function is responsible for taking the player's guess. It ensures that the player enters a single alphabet and that the guess has not already been made. It returns the guessed letter. 
+
+
 Game was complete but there was a mistake as the game was not taking another input letter.
