@@ -36,7 +36,7 @@ HANGMAN_PICS = ['''
    /|\  |
    / \  |
        ===''']
-words_list = 'antelope bison buffalo chimpanzee elephant giraffe gorilla hippopotamus jaguar kangaroo koala leopard ostrich panther porcupine raccoon squirrel yak armadillo baboon bobcat cheetah hyena jackal'.split()
+words_list = 'Pizza Burger Salad Pasta Soup Fries Sushi Taco Cake Pie Bread Cheese Cookie Donut Apple antelope bison buffalo chimpanzee elephant giraffe gorilla hippopotamus jaguar kangaroo koala leopard ostrich panther porcupine raccoon squirrel yak armadillo baboon bobcat cheetah hyena jackal'.split()
 
 def random_words(words):
     """
