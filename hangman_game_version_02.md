@@ -1,28 +1,37 @@
-Here Ashish(developer) has uploded 2nd version of game.
-Here is some description of game
+Here Ashish(developer) has uploded 2nd version of game. Here is some description of game
 
-Now the game is complete and the developer has checked and corrected all the mistakes in the game. 
+Now the game is complete and the developer has checked and corrected all the mistakes in the game.
 
-import random: This line imports the random module in Python, which is used to generate random numbers and make random selections.
+Constants:
 
-HANGMAN_PICS: This is a list containing ASCII art representations of the hangman at various stages of the game. Each element in the list represents a different stage of the hangman being drawn.
+HANGMAN_PICS: A list of ASCII art representing the different stages of the hangman as the player makes incorrect guesses.
+words_list: A list of words that could be selected as the secret word for the game.
 
-words_list: This is a list containing various words that could be chosen as the secret word in the game. Each word is separated by a space and is represented as a string.
+Functions:
+random_words(words): Selects a random word from the words_list.
 
-random_words(words): This function takes a list of words as input and returns a random word from that list using the random.randint() function to generate a random index within the range of the list.
+display_screen(missed_letters, correct_letters, secret_word): Displays the current state of the game, including missed letters, correct letters guessed, and the word with blanks representing unguessed letters.
 
-display_screen(missed_letters, correct_letters, secret_word): This function is responsible for displaying the game screen. It takes three arguments:
+_guess(already_guessed): Handles user input for guessing letters. Ensures the input is a single alphabet that hasn't been guessed before.
 
-missed_letters: A list containing the letters guessed by the player that are not present in the secret word.
+play_again(): Asks the player if they want to play again.
 
-correct_letters: A list containing the letters guessed by the player that are present in the secret word.
+Main Game Loop:
 
-secret_word: The secret word that the player needs to guess.
-This function prints the hangman's current state, the missed letters, and the correct guesses so far. It also prints the secret word with underscores representing unguessed letters and the guessed letters revealed.
+1.The game starts by selecting a random word from words_list.
+2.Inside the game loop, it displays the current state of the game using    display_screen.
+3.It then prompts the player to enter a guess using _guess.
+4.If the guess is correct, it updates correct_letters and checks if the player has won.
+5.If the guess is incorrect, it updates missed_letters and checks if the player has lost.
+6.If the game is over (either won or lost), it asks the player if they want to play again.
+7.The game continues until the player decides not to play again.
 
-guess(already_guessed): This function is responsible for taking the player's guess. It ensures that the player enters a single alphabet and that the guess has not already been made. It returns the guessed letter. 
-  
+Execution:
 
+1.The code begins by printing the title of the game.
+2.Then, it initializes variables for missed letters, correct letters, and selects a secret word.
+3.The main game loop runs until the player decides not to play again.
 
+Overall:
 
- 
+This code creates a simple command-line Hangman game where the player guesses letters to uncover a hidden word. It provides feedback on missed letters and the current state of the word being guessed. If the player runs out of guesses, they lose, and if they guess the word correctly, they win. After each game, the player is given the option to play again.
