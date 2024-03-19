@@ -6,9 +6,9 @@
 Welcome to the Python Game Development Repository. The purpose of creating the Python Game Development Repository is to provide a centralized platform for developers to collaborate on the creation of a game using Python. The creation of this repository aims to provide a collaborative and supportive environment for developers to learn, create, and contribute to a Python-based game project.The repository serves as an educational resource for individuals interested in learning about Python game development.
 
 # Team Members:
-1) Jatin Dhull (Leader)
-2) Mr. Ashish (Developer)
-3) Navjot Singh (Tester)
+1) Jatin Dhull
+2) Mr. Ashish 
+3) Navjot Singh
 
 # Instructions to run the Game: 
 
